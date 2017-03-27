@@ -37,7 +37,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/text_color"
                 android:textSize="@dimen/menu_text_size"
-                android:text="This is demo project" />
+                android:text="Demo List shows using json parsing " />
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/recycler"
