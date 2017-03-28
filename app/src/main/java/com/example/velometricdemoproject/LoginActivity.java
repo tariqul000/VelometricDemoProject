@@ -38,8 +38,11 @@ public class LoginActivity extends AppCompatActivity {
 
             case R.id.btnLogin:
 
+                Intent intent = new Intent(LoginActivity.this,
+                        MainActivity.class);
 
-                CheckLoginLocal();
+                startActivity(intent);
+                //CheckLoginLocal();
                 break;
         }
 

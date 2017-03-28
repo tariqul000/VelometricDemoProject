@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity implements OnMenuItemClickLi
         menuParams.setActionBarSize((int) getResources().getDimension(R.dimen.tool_bar_height));
         menuParams.setMenuObjects(getMenuObjects());
         menuParams.setClosableOutside(false);
+
         mMenuDialogFragment = ContextMenuDialogFragment.newInstance(menuParams);
         mMenuDialogFragment.setItemClickListener(this);
         mMenuDialogFragment.setItemLongClickListener(this);
@@ -181,6 +182,7 @@ public class MainActivity extends AppCompatActivity implements OnMenuItemClickLi
     @Override
     public void onMenuItemLongClick(View clickedView, int position) {
         Toast.makeText(this, "Long clicked on position: " + position, Toast.LENGTH_SHORT).show();
+
 
     }
 }
